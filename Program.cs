@@ -8,7 +8,7 @@ static extern string SHGetKnownFolderPath(
 
 string path = SHGetKnownFolderPath(new Guid("F1B32785-6FBA-4FCF-9D55-7B8E7F157091"), 0) + "\\Packages\\TheBrowserCompany.Arc_ttt1ap7aakyb4\\LocalCache\\Local\\firestore\\Arc\\bcny-arc-server\\main";
 
-while (true)
+while (true) // 0% CPU and 8MB RAM
 {
     try
     {
