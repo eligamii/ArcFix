@@ -18,7 +18,7 @@ while (true) // 0% CPU and 8MB RAM
         while (processes.Count() == 0)
         {
             await Task.Delay(100);
-            processes = processes = Process.GetProcessesByName("Arc");
+            processes = Process.GetProcessesByName("Arc");
         }
 
         Task.WaitAll(processes.Select(p => p.WaitForExitAsync()).ToArray());
