@@ -12,9 +12,10 @@ while (true) // 0% CPU and 8MB RAM
 {
     try
     {
-        foreach (string file in Directory.GetFiles(path)) File.Delete(file);
+        Directory.Delete(path);
         var processes = Process.GetProcessesByName("Arc");
 
+        Co
         while (processes.Count() == 0)
         {
             await Task.Delay(100);
@@ -22,6 +23,7 @@ while (true) // 0% CPU and 8MB RAM
         }
 
         Task.WaitAll(processes.Select(p => p.WaitForExitAsync()).ToArray());
+        Console.WriteLine("Arc for Windows closed, deleting the firestore folder");
     }
-    catch { }
+    catch (Exception e) { Console.WriteLine(e.Message); }
 }
