@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ArcFix": {
+      "commandName": "Project",
+      "commandLineArgs": "restore"
+    }
+  }
+}
