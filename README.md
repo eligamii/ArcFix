@@ -1,6 +1,6 @@
 # ArcFix - [Direct download](https://github.com/eligamii/ArcFix/releases/download/v2/ArcFix.exe)
 
-Very simple and lightweight program to fix Arc for Windows not being able to launch on certain devices.
+Very simple and lightweight program to fix Arc for Windows not being able to start on certain devices more than one time.
 
 ## How to use
 
