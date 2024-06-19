@@ -69,7 +69,7 @@ public static class Program
     {
         string path = Path.Combine(_arcLocalAppDataPath, "LocalCache", "Local", "firestore", "Arc");
 
-        while (true) // 2% CPU (i5 1155g7) and 8.7MB RAM
+        while (true) // 0.5% or 0% CPU when using Arc (i5 1155g7) and 8.7MB RAM
         {
             try
             {
